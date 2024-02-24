@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="261*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="124*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="text" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="207" Width="780" FontSize="20" TextAlignment="Center"/>
+        <Button Content="Connect to DB" Margin="132,0,0,0" VerticalAlignment="Center" Height="36" Click="ConnectToDB" Grid.Row="1" HorizontalAlignment="Left" Width="174"/>
+        <Button Content="Cencel connection" Margin="467,0,159,0" VerticalAlignment="Center" Height="36" Click="DisconnectDB" Grid.Row="1"/>
 
     </Grid>
 </Window>
